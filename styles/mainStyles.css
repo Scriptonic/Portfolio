@@ -1,6 +1,6 @@
 /*Main Style for all pages*/
 
-/* Header Styles */
+/*******************************************************Header*******************************************************/
 header{
 	display: block;
 	width: 100%;
@@ -49,12 +49,14 @@ li a {
 
  }
 
- /*Body*/
+ /*******************************************************Body*******************************************************/
 body {
  	margin:0px;
  	background-color: #FAF3E0;
  }
 
+
+/**********Intro**********/
 #div_intro{
   position: relative;
   overflow: auto;
@@ -68,10 +70,9 @@ body {
   padding-left: 2%;
 }
 
- h1{
+h1{
   display: inline-block;
-
- }
+}
 
 .wrapper {
 	margin-right: auto; /* 1 */
@@ -90,18 +91,84 @@ body {
   margin-bottom: 20px;
   border: 5px solid #1E212D;
 }
-/*#circle_profile_picture_outline{
-  background-color: #1E212D;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  max-width: 360px;
-  max-height: 360px;
+
+/**********Projects**********/
+$color: #0cf;
+
+.button {
+  display: inline-block;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color;
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken($color, 15%);
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  &:hover {
+    color: #fff;
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+/* optional reset for presentation */
+* {
+  font-family: Arial;
+  text-decoration: none;
+  font-size: 20px;
+}
+.container {
+  padding-top: 50px;
+  margin: 0 auto;
   width: 100%;
-  height: 100%;
-}*/
+  text-align: center;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: .8rem;
+  margin-bottom: 2rem;
+  color: #777;
+}
+span {
+  display: block;
+  margin-top: 2rem;
+  font-size: .7rem;
+  color: #777;
+  a {
+    font-size: .7rem;
+    color: #999;
+    text-decoration: underline;
+  }
+}
 
-
-/*Footer*/
+/*******************************************************Footer*******************************************************/
 footer{
 
   width: 100%;
