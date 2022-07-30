@@ -1,7 +1,8 @@
 <!doctype html>
-
 <html lang="en">
+
 <head>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,45 +11,32 @@
   <link rel="icon" href="/favicon.ico">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="styles/mainStyles.css">
 
 </head>
-<header>
-    <ul>
-      <li class="home"><a href="index.html">Isaac Estell</a></li>
-      <li class="nav"><a href="contact.html">Contact</a></li>
-    </ul>
-</header>
+
 <body>
-  <div class="wrapper">
-
-    <!--Circle Profile Picture-->
-    <div id="div_intro">
-      <img src='media/profile_picture_temp_resized.jpg' id="circle_profile_picture">
-      <script>
-        document.getElementById('circle_profile_picture').style.borderRadius = '50%';
-      </script>
-
-      <div id="div_intro_text">
-        <h1>Nice to meet you, I'm Isaac</h1>
-      </div>
-
+  <div id="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div id="homeView">
+    <div id="divHome">
+      <img src='media/profile_home_screen.jpg' id="profileHomeScreenImg">
+        <script>
+          document.getElementById('profileHomeScreenImg').style.borderRadius = '50%';
+        </script>
+      <h1 id="nameTxt">Isaac Estell<h1>
+      <h2 id="titleTxt">Full Stack<h2>
+      <h2 id="titleTxt">Developer</h2>
     </div>
-    <div id="skills_overview">
-
-        Skills overview: TODO!
-    </div>
-    <div id="projects_overview">
-      <div class="project_buttons" id="project_button_slide"><div id="slide"></div>Project 1</div>
-      <div class="project_buttons" id="project_button_slide"><div id="slide"></div>Project 2</div>
-      <div class="project_buttons" id="project_button_slide"><div id="slide"></div>Project 3</div>
-      <div class="project_buttons" id="project_button_slide"><div id="slide"></div>Project 4</div>
-    </div>  
-
-
+    <p id="workTxt">See My Work</p>
   </div>
 </body>
-<footer>
-  footer
-</footer>
+
 </html>
