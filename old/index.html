@@ -1,7 +1,8 @@
 <!doctype html>
-
 <html lang="en">
+
 <head>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,45 +15,28 @@
   <link rel="stylesheet" href="styles/mainStyles.css">
 
 </head>
-<header>
-    <ul>
-      <li class="home"><a href="index.html">Isaac Estell</a></li>
-      <li class="nav"><a href="contact.html">Contact</a></li>
-    </ul>
-</header>
+
 <body>
- 
-
-    <!--Circle Profile Picture-->
-    <div id="div_intro">
-      <img src='media/profile_picture_temp_resized.jpg' id="circle_profile_picture">
-      <script>
-        document.getElementById('circle_profile_picture').style.borderRadius = '50%';
-      </script>
-
-      <div id="div_intro_text">
-        <h5>Hi my name is</h5>
-        <h1>Isaac Estell</h1>
-        <h3>Passionate full stack developer reporting for duty.</h3>
-      </div>
-
+  <div id="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div id="homeView">
+    <div id="divHome">
+      <img src='media/profile_home_screen.jpg' id="profileHomeScreenImg">
+        <script>
+          document.getElementById('profileHomeScreenImg').style.borderRadius = '50%';
+        </script>
+      <h1 id="nameTxt">Isaac Estell<h1>
+      <h2 id="titleTxt">Full Stack<h2>
+      <h2 id="titleTxt">Developer</h2>
     </div>
-    <div class="wrapper">
-      <div id="skills_overview">
-
-        Skills overview: TODO!
-      </div>
-      <div id="projects_overview">
-        <div class="project_buttons" id="project_button_slide"><div id="slide"></div><p id="projectTitle">Portfolio</p></div>
-        <div class="project_buttons" id="project_button_slide"><div id="slide"></div><p id="projectTitle">Project 2</div>
-        <div class="project_buttons" id="project_button_slide"><div id="slide"></div><p id="projectTitle">Project 3</p></div>
-        <div class="project_buttons" id="project_button_slide"><div id="slide"></div><p id="projectTitle">Project 4</p></div>
-      </div>  
-
-
+    <p id="workTxt">See My Work</p>
   </div>
 </body>
-<footer>
-  footer
-</footer>
+
 </html>
