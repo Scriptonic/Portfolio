@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/mainStyles.css">
 
     <!--Bootstrap-->
@@ -14,90 +13,79 @@
 
 </head>
 
-<body class="bg-dark text-white">
-    <div class="container">
+<body class="bg-light container-fluid text-dark">
+        <div class="intro rounded border-dark p-5 text-center">
+            <div class="col-12">
+                <img id="profilePic" class="img rounded-circle" src="media/transparent_profile_pic.png">
+            </div>
 
-        <!-navbar->
-            <div class="row">
-                <nav class="navbar navbar-expand navbar-dark bg-dark">
-                    <a class="navbar-brand" href="index.html#">Isaac Estell</a>
-                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navbar-collapse collapse" id="navbarCollapse" style="">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html#">Home<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Projects
-                              </a>
-                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="projects/project-template.html#">Project 1</a>
-                                <a class="dropdown-item" href="projects/project-template.html#">Project 2</a>
-                                <a class="dropdown-item" href="projects/project-template.html#">Project 3</a>
-                            </div>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="about.html#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <div class="row justify-content-md-center">
-            <div class="col-6 text-center">
-                <img src="media/profile_home_screen.jpg" class="img-fluid rounded-circle">
+            <div id="nameTag" class="col-12" id="intro">
+                <h1>Isaac Estell</h1>
+                <h3>Software Developer</h3>
             </div>
-        </div>
 
-        <div class="row justify-content-md-center text-dark">
-           <div class="col-6 d-flex align-items-center flex-column bg-light">
-                <div class="p-2">
-                    <p class="h1 font-weight-bold" style="font-size:4rem">Isaac Estell</p>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-md-center text-dark">
-            <div class="col-6 d-flex align-items-center flex-column bg-light">
-                <p class="font-weight-normal" style="font-size:2.5rem">Full Stack Developer</p>
-            </div>
-        </div>
-        <div class="row justify-content-md-center">
-            <div class="col-6 d-flex align-items-center flex-column bg-light">
-                <div class="p-4">
-                    <a class="text-secondary" href="projects.html#">
-                        <button class="btn btn-outline-secondary" style="font-size:2.0rem">See My Work</button>
-                    </a>
-                </div>
+            <div id="seeMyWorkButton" class="col-12 p-3" id="intro">
+                <button class="btn btn-outline-dark" text="">See My Work!</button>
             </div>
         </div>
         
+        
+        
+        <div id="introTextDiv" class="col-8 text-center">
+            <h4>Nice to meet you!</h4>
+            <p id="introText">
+                My name is Isaac Estell and I am a Software Developer. 
+                I have been programming for about seven years now, 
+                starting at the young age of fourteen. I have experience with multiple languages
+                but my speciality lies in OOP (Object Oriented Programming).
+            </p>
         </div>
 
 
-       
-</div>
-</div>
+
+        <div class="col-4 text-center" id="Skills">
+            <h4 class="h4 text-center">Quick Skills</h4>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    .Net MVC C#
+                </li>
+                <li class="list-group-item">
+                    Java
+                </li>
+                <li class="list-group-item">
+                    HTML
+                </li>
+                <li class="list-group-item">
+                    Javascript
+                </li>
+                <li class="list-group-item">
+                    JQuery
+                </li>
+                <li class="list-group-item">
+                    CSS 
+                </li>
+                <li class="list-group-item">
+                    Bootstrap
+                </li>
+            </ul>
+            
+        </div>
 
 
 
-</div>
-
-</div>    
 
 
 
+   
 
-<!--jQuery-->
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
 
-<!--Bootstrap-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
 </body>
 

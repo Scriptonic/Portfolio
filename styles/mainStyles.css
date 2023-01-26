@@ -1,3 +1,38 @@
-.p-text{
-	font-size: 1.2rem;
+#projects{
+	text-decoration: NONE;
+	
+}
+
+body{
+	
+	font-size:1.2em;
+	max-width: 1920px;
+	
+}
+
+.intro{
+	background-image: url('../media/intro-sea-banner.jpg');
+	min-height: 800px;
+	max-width: 1920px;
+	align-self: center;
+	margin: auto;
+}
+
+
+#profilePic{
+	margin-top: 3em;
+ 	max-width: 22%;
+	/* border: 2px solid black; */
+ 	box-shadow: 0.15em 0.1em 0.1em black;
+}
+
+#Skills
+{
+	padding-top:3em;
+	float:right;
+}
+
+#introTextDiv{
+	padding-top:3em;
+	float: left;
 }
