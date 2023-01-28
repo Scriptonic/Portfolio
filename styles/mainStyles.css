@@ -1,12 +1,9 @@
-#projects{
-	text-decoration: NONE;
-	
-}
+
 
 body{
 	
 	font-size:1.2em;
-	max-width: 1920px;
+	max-width: 1000px;
 	
 }
 
@@ -29,10 +26,29 @@ body{
 #Skills
 {
 	padding-top:3em;
-	float:right;
+
 }
 
 #introTextDiv{
 	padding-top:3em;
-	float: left;
+
+	
+}
+.projects{
+	width: fit-content;
+	height: auto;
+    position: absolute;
+	z-index: 9;
+}
+.projectOrange{
+	margin: -9%;
+	color: #f8b755;
+	background-color: #f8b755;
+}
+#projectsHeader{
+	position: relative;
+	width: fit-content;
+	height: fit-content;
+	margin: 30px;
+	border: 2px solid black;
 }
