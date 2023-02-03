@@ -34,21 +34,23 @@ body{
 
 	
 }
-.projects{
-	width: fit-content;
+.pageSection{
+	width: 50%;
 	height: auto;
     position: absolute;
 	z-index: 9;
 }
-.projectOrange{
-	margin: -9%;
+.pageSectionOrange{
+	margin: -2%;
 	color: #f8b755;
 	background-color: #f8b755;
 }
-#projectsHeader{
+.pageSectionHeader{
 	position: relative;
-	width: fit-content;
+	width: 50%;
 	height: fit-content;
 	margin: 30px;
 	border: 2px solid black;
+	left: 50%;
+	transform: translateX(-50%);
 }
