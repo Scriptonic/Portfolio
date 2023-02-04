@@ -1,10 +1,10 @@
 
 
 body{
-	
 	font-size:1.2em;
+}
+#page{
 	max-width: 1000px;
-	
 }
 
 .intro{
@@ -26,7 +26,6 @@ body{
 #Skills
 {
 	padding-top:3em;
-
 }
 
 #introTextDiv{
@@ -53,4 +52,23 @@ body{
 	border: 2px solid black;
 	left: 50%;
 	transform: translateX(-50%);
+}
+#contactDiv{
+	
+	padding: 5%;
+}
+#contact{
+	box-shadow: 0.1em 0.1em 0.1em black;
+}
+#footer{
+	width:100%;
+	min-width:100%;
+	min-height: 100px;
+}
+
+.externalLinks{
+	max-width: 50px;
+	max-height: 50px;
+	box-shadow: 0.1em 0.1em 0.1em black;
+	background-color: #f8b755;
 }
