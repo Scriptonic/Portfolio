@@ -55,7 +55,7 @@
                 </div>
             </div>
 
-
+            
 
             <div class="col-sm-12 col-lg-6 text-center p-5" id="Skills">
                 <h4 class="h4 text-center">Quick Skills</h4>
@@ -174,15 +174,15 @@
                 <form>
                     <div class="form-group">
                         <label class="h2">Get In Touch</label><br>
-                        <label for="exampleInputEmail1">Email Address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        <label for="ContactEmail">Email Address</label>
+                        <input type="email" class="form-control" id="ContactEmail" aria-describedby="emailHelp"
                             placeholder="Enter email">
                         <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone
                             else.</small>
                     </div>
                     <div class="form-group">
-                        <label for="interestDropdown">Reason For Contacting</label>
-                        <select type="" class="form-control" id="interestDropdown">
+                        <label for="reasonForContactingDropdown">Reason For Contacting</label>
+                        <select type="" class="form-control" id="reasonForContactingDropdown">
                             <option>More Info</option>
                             <option>Interested In Hiring</option>
                             <option>Questions</option>
@@ -190,10 +190,10 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Anything else you want to say?</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+                        <label for="message">Anything else you want to say?</label>
+                        <textarea class="form-control" id="message" rows="7"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary" onclick="sendEmail()">Submit</button>
                 </form>
             </div>
 
@@ -215,12 +215,46 @@
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
 
+    <!--SmptJS-->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script>
 
         function btnSeeMyWork() {
             document.getElementById("projectsHeader").scrollIntoView({ behavior: 'smooth' });
         }
 
+        function sendEmail() {
+            var generatedEmail = generateEmail()
+            Email.send({
+                SecureToken : "bbeb335b-a08d-4b61-9c59-9b206cdfa1a9",
+                To : 'iestell229@gmail.com',
+                From : "iestell229@gmail.com",
+                Subject : "Website Contact... READ THIS ONE",
+                Body : String(generatedEmail)//,
+                // Attachments : [{
+		           
+	            // }]
+	        }).then(message => alert(message)
+	    );}
+
+        function generateEmail(){
+            var contactEmail = $('#ContactEmail').val();
+            var reasonForContacting = $('#reasonForContactingDropdown').val();
+            var message = $('#message').val();
+            
+            var emailBody = ""
+                                + "<b>Contact Email:</b>"
+                                + contactEmail
+                                + "<br/><b>Reason For Contacting:</b>"
+                                + reasonForContacting
+                                + "<br/><b>Message:</b>"
+                                + message
+                            +"";
+
+
+            return emailBody;
+        }
 
     </script>
 
