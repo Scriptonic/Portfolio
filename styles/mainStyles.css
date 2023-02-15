@@ -66,6 +66,9 @@ body{
 	min-height: 100px;
 	background-color: #C6D1D5;
 }
+.projectPictures{
+	border:5px solid #C6D1D5;
+}
 
 .externalLinks{
 	max-width: 50px;
