@@ -16,197 +16,224 @@
 </head>
 
 <body class="bg-light text-dark">
-    <div class="container text-center" id="page">
-        <div class="intro rounded border-dark p-5 text-center">
-            <div class="col-12">
-                <img id="profilePic" class="img rounded-circle" src="media/transparent_profile_pic.png">
+    <div class="side-bar">
+        <nav class="navigation">
+            <ul class="menu">
+                <li>
+                    <a href="#home">Home</a>
+                    <a href="#intro">Intro</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact-section">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container" id="page">
+
+        <section id="home">
+            <div class="rounded border-dark text-center p-5">
+                <div class="col-12">
+                    <img id="profilePic" class="img rounded-circle" src="media/transparent_profile_pic.png">
+                </div>
+
+                <div id="nameTag" class="col-12" id="intro">
+                    <h1>Isaac Estell</h1>
+                    <h3>Software Developer</h3>
+                </div>
+
+                <div id="seeMyWorkButton" class="col-12 p-3" id="intro">
+                    <button class="btn btn-outline-dark" onclick="btnSeeMyWork()">See My Work!</button>
+
+
+                </div>
             </div>
+        </section>
 
-            <div id="nameTag" class="col-12" id="intro">
-                <h1>Isaac Estell</h1>
-                <h3>Software Developer</h3>
+
+        <section id="intro">
+            <div class="row">
+                <div id="introTextDiv" class="col-sm-12 col-lg-6">
+                    <h4>Nice to meet you!</h4>
+                    <p id="introText">
+                        My name is Isaac Estell and I am a Software Developer.
+                        I have been programming for about seven years now.
+                        I have experience with multiple languages
+                        but my speciality lies in OOP (Object Oriented Programming).
+                    </p>
+                    <p id="introText">
+                        At my current position I am a Full Stack Software Developer on a AGILE/SCRUM team. I do a lot
+                        with SQL and MVC projects. My favorite thing to make is Processors that complete tasks such as
+                        creating reports or running calculations on our Database.
+                    </p>
+                    <p id="introText">
+                        I am currently looking for a new position that involves a lot of back end development. Let me
+                        be the brain in the basement with the lights off for your company!
+                    </p>
+                    <div class="text-center">
+                        <a href="media/resume_20220811.pdf" target="_blank" download="IsaacEstell"
+                            class="btn  externalLinks"><img src="media/downloadIcon.png" class="img-fluid"></a>
+                        <a href="mailto:iestell229@gmail.com" target="_blank" class="btn externalLinks"><img
+                                src="media/mail-icon.png" class="img-fluid"></a>
+                        <a href="https://www.linkedin.com/in/isaac-estell-b31952162/" target="_blank"
+                            class="btn  externalLinks"><img src="media/linkedInLogo.png" class="img-fluid"></a>
+                        <a href="https://github.com/Scriptonic" target="_blank" class="btn externalLinks"><img
+                                src="media/githubLogo.png" class="img-fluid"></a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm-12 col-lg-6 text-center p-5" id="Skills">
+                    <h4 class="h4 text-center">Quick Skills</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            .Net MVC C#
+                        </li>
+                        <li class="list-group-item">
+                            SQL
+                        </li>
+                        <li class="list-group-item">
+                            AGILE/SCRUM
+                        </li>
+                        <li class="list-group-item">
+                            Java
+                        </li>
+                        <li class="list-group-item">
+                            HTML
+                        </li>
+                        <li class="list-group-item">
+                            Javascript
+                        </li>
+                        <li class="list-group-item">
+                            JQuery
+                        </li>
+                        <li class="list-group-item">
+                            CSS
+                        </li>
+                        <li class="list-group-item">
+                            Bootstrap
+                        </li>
+                    </ul>
+
+                </div>
             </div>
+        </section>
 
-            <div id="seeMyWorkButton" class="col-12 p-3" id="intro">
-                <button class="btn btn-outline-dark" onclick="btnSeeMyWork()">See My Work!</button>
-
-
-            </div>
-        </div>
+        <section id="projects">
 
 
-        <div class="row">
-            <div id="introTextDiv" class="col-sm-12 col-lg-6 text-center">
-                <h4>Nice to meet you!</h4>
-                <p id="introText">
-                    My name is Isaac Estell and I am a Software Developer.
-                    I have been programming for about seven years now.
-                    I have experience with multiple languages
-                    but my speciality lies in OOP (Object Oriented Programming).
-                </p>
-                <p id="introText">
-                    At my current position I am a Full Stack Software Developer on a AGILE/SCRUM team. I do a lot
-                    with SQL and MVC projects. My favorite thing to make is Processors that complete tasks such as
-                    creating reports or running calculations on our Database.
-                </p>
-                <p id="introText">
-                    I am currently looking for a new position that involves a lot of back end development. Let me 
-                    be the brain in the basement with the lights off for your company!
-                </p>
-                <div class="">
-                    <a href="media/resume_20220811.pdf" target="_blank" download="IsaacEstell"
-                        class="btn  externalLinks"><img src="media/downloadIcon.png" class="img-fluid"></a>
-                    <a href="mailto:iestell229@gmail.com" target="_blank" class="btn externalLinks"><img src="media/mail-icon.png" class="img-fluid"></a>
-                    <a href="https://www.linkedin.com/in/isaac-estell-b31952162/" target="_blank"
-                        class="btn  externalLinks"><img src="media/linkedInLogo.png" class="img-fluid"></a>
-                    <a href="https://github.com/Scriptonic" target="_blank" class="btn externalLinks"><img
-                            src="media/githubLogo.png" class="img-fluid"></a>
+            <div class="row text-center position-relative pageSectionHeader" id="projectsHeader">
+                <!--Projects-->
+
+                <div class="col rounded pageSection bg-light">
+                    <h2 class="">Projects</h2>
+                </div>
+                <div class="col rounded position-absolute pageSectionOrange">
+                    <h2 class="">Projects</h2>
                 </div>
             </div>
 
-            
 
-            <div class="col-sm-12 col-lg-6 text-center p-5" id="Skills">
-                <h4 class="h4 text-center">Quick Skills</h4>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        .Net MVC C#
-                    </li>
-                    <li class="list-group-item">
-                        SQL
-                    </li>
-                    <li class="list-group-item">
-                        AGILE/SCRUM
-                    </li>
-                    <li class="list-group-item">
-                        Java
-                    </li>
-                    <li class="list-group-item">
-                        HTML
-                    </li>
-                    <li class="list-group-item">
-                        Javascript
-                    </li>
-                    <li class="list-group-item">
-                        JQuery
-                    </li>
-                    <li class="list-group-item">
-                        CSS
-                    </li>
-                    <li class="list-group-item">
-                        Bootstrap
-                    </li>
-                </ul>
+
+
+
+
+            <div class="row p-1">
+                <div class="col-6">
+                    <p class="h2 p-2">
+                        Auto-Cropper
+                    </p>
+                    <p class="p-text">
+                        Through the use of Python and the package PyTorch, I created an automatic image cropper.
+                        The program works by taking in an image, locating the user's head using image recognition and a
+                        neural network.
+                        After the program finds the correct pixel location the photo gets cropped so that
+                        only the user's shoulders and head is visible. This is currently being used at the company I
+                        work for
+                        to standardize the profile pictures on their seating chart application.
+                    </p>
+                </div>
+                <div class="col-6 p-4">
+                    <img class="img-fluid rounded projectPictures" src="media/example-project-picture.png">
+                </div>
 
             </div>
-        </div>
 
+            <div class="row p-1">
+                <div class="col-6">
+                    <p class="h2 p-2" >
+                        Project Title
+                    </p>
+                    <p class="p-text">
+                        Project Description SHORT Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Et netus et malesuada fames ac turpis egestas.
+                        Molestie
+                        ac
+                        feugiat sed lectus vestibulum mattis ullamcorper velit. Velit ut tortor pretium viverra
+                        suspendisse
+                        potenti nullam ac tortor. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin.
+                        Vulputate enim nulla aliquet porttitor lacus. Facilisi cras fermentum odio eu. Leo in vitae
+                        turpis
+                        massa
+                        sed elementum tempus. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Risus ultricies
+                        tristique nulla aliquet enim tortor at auctor. Duis convallis convallis tellus id interdum velit
+                        laoreet
+                        id donec.
+                    </p>
+                </div>
+                <div class="col-6 p-4">
+                    <img class="img-fluid rounded projectPictures" src="media/example-project-picture.png">
+                </div>
 
-
-        <div class="row text-center position-relative pageSectionHeader" id="projectsHeader">
-            <!--Projects-->
-
-            <div class="col rounded pageSection bg-light">
-                <h2 class="">Projects</h2>
-            </div>
-            <div class="col rounded position-absolute pageSectionOrange">
-                <h2 class="">Projects</h2>
-            </div>
-        </div>
-
-
-
-
-
-        <div class="row p-1" style="border-bottom: 2px solid #f8f9fa;">
-            <div class="col-6">
-                <p class="h2 p-2" style="border-bottom: 2px solid #6c757d;">
-                    Auto-Cropper
-                </p>
-                <p class="p-text">
-                    Through the use of Python and the package PyTorch, I created an automatic image cropper.
-                    The program works by taking in an image, locating the user's head using image recognition and a neural network.
-                    After the program finds the correct pixel location the photo gets cropped so that
-                    only the user's shoulders and head is visible. This is currently being used at the company I work for
-                    to standardize the profile pictures on their seating chart application.
-                </p>
-            </div>
-            <div class="col-6 p-4">
-                <img class="img-fluid rounded" style="border: 5px solid #6c757d"
-                    src="media/example-project-picture.png">
             </div>
 
-        </div>
+        </section>
 
-        <div class="row p-1">
-            <div class="col-6">
-                <p class="h2 p-2" style="border-bottom: 2px solid #6c757d;">
-                    Project Title
-                </p>
-                <p class="p-text">
-                    Project Description SHORT Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor
-                    incididunt ut labore et dolore magna aliqua. Et netus et malesuada fames ac turpis egestas. Molestie
-                    ac
-                    feugiat sed lectus vestibulum mattis ullamcorper velit. Velit ut tortor pretium viverra suspendisse
-                    potenti nullam ac tortor. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin.
-                    Vulputate enim nulla aliquet porttitor lacus. Facilisi cras fermentum odio eu. Leo in vitae turpis
-                    massa
-                    sed elementum tempus. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Risus ultricies
-                    tristique nulla aliquet enim tortor at auctor. Duis convallis convallis tellus id interdum velit
-                    laoreet
-                    id donec.
-                </p>
-            </div>
-            <div class="col-6 p-4">
-                <img class="img-fluid rounded projectPictures"
-                    src="media/example-project-picture.png">
-            </div>
+        <section id="contact-section">
+            <div class="row text-center position-relative pageSectionHeader" id="pageSectionHeader">
+                <!--Projects-->
 
-        </div>
-
-        <div class="row text-center position-relative pageSectionHeader" id="pageSectionHeader">
-            <!--Projects-->
-
-            <div class="col rounded pageSection bg-light">
-                <h2 class="">Contact</h2>
-            </div>
-            <div class="col rounded position-absolute pageSectionOrange">
-                <h2 class="">Contact</h2>
-            </div>
-        </div>
-
-
-        <div class="row justify-content-md-center"  id="contactDiv">
-            <div class="col-7 bg-light p-3 rounded text-dark" id="contact">
-                <form>
-                    <div class="form-group">
-                        <label class="h2">Get In Touch</label><br>
-                        <label for="ContactEmail">Email Address</label>
-                        <input type="email" class="form-control" id="ContactEmail" aria-describedby="emailHelp"
-                            placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone
-                            else.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="reasonForContactingDropdown">Reason For Contacting</label>
-                        <select type="" class="form-control" id="reasonForContactingDropdown">
-                            <option>More Info</option>
-                            <option>Interested In Hiring</option>
-                            <option>Questions</option>
-                            <option>Start A Project</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Anything else you want to say?</label>
-                        <textarea class="form-control" id="message" rows="7"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" onclick="sendEmail()">Submit</button>
-                </form>
+                <div class="col rounded pageSection bg-light">
+                    <h2 class="">Contact</h2>
+                </div>
+                <div class="col rounded position-absolute pageSectionOrange">
+                    <h2 class="">Contact</h2>
+                </div>
             </div>
 
 
-        </div>
+            <div class="row justify-content-md-center" id="contactDiv">
+                <div class="col-7 bg-light p-3 rounded text-dark" id="contact">
+                    <form>
+                        <div class="form-group">
+                            <label class="h2">Get In Touch</label><br>
+                            <label for="ContactEmail">Email Address</label>
+                            <input type="email" class="form-control" id="ContactEmail" aria-describedby="emailHelp"
+                                placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="reasonForContactingDropdown">Reason For Contacting</label>
+                            <select type="" class="form-control" id="reasonForContactingDropdown">
+                                <option>More Info</option>
+                                <option>Interested In Hiring</option>
+                                <option>Questions</option>
+                                <option>Start A Project</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Anything else you want to say?</label>
+                            <textarea class="form-control" id="message" rows="7"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="sendEmail()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </div>
     <footer id="footer" class="text-dark text-center">
         Copyright 2023
@@ -226,6 +253,11 @@
     <!--SmptJS-->
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
+
+    <!--Scroll Nav-->
+    <script src="scripts/nav-scroll.js">
+    </script>
+
     <script>
 
         function btnSeeMyWork() {
@@ -235,30 +267,31 @@
         function sendEmail() {
             var generatedEmail = generateEmail()
             Email.send({
-                SecureToken : "bbeb335b-a08d-4b61-9c59-9b206cdfa1a9",
-                To : 'iestell229@gmail.com',
-                From : "iestell229@gmail.com",
-                Subject : "READ THIS ONE",
-                Body : String(generatedEmail)//,
+                SecureToken: "bbeb335b-a08d-4b61-9c59-9b206cdfa1a9",
+                To: 'iestell229@gmail.com',
+                From: "iestell229@gmail.com",
+                Subject: "READ THIS ONE",
+                Body: String(generatedEmail)//,
                 // Attachments : [{
-		           
-	            // }]
-	        }).then(message => alert(message)
-	    );}
 
-        function generateEmail(){
+                // }]
+            }).then(message => alert(message)
+            );
+        }
+
+        function generateEmail() {
             var contactEmail = $('#ContactEmail').val();
             var reasonForContacting = $('#reasonForContactingDropdown').val();
             var message = $('#message').val();
-            
+
             var emailBody = ""
-                                + "<b>Contact Email:</b>"
-                                + contactEmail
-                                + "<br/><b>Reason For Contacting:</b>"
-                                + reasonForContacting
-                                + "<br/><b>Message:</b>"
-                                + message
-                            +"";
+                + "<b>Contact Email:</b>"
+                + contactEmail
+                + "<br/><b>Reason For Contacting:</b>"
+                + reasonForContacting
+                + "<br/><b>Message:</b>"
+                + message
+                + "";
 
 
             return emailBody;

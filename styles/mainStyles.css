@@ -1,14 +1,14 @@
 
 
 body{
-	font-size:1.2em;
+	font-size:1.8em;
 }
 #page{
 	max-width: 1000px;
 }
 
 .intro{
-	background-image: url('../media/intro-sea-banner.jpg');
+	
 	min-height: 800px;
 	max-width: 1920px;
 	align-self: center;
@@ -67,7 +67,7 @@ body{
 	background-color: #C6D1D5;
 }
 .projectPictures{
-	border:5px solid #C6D1D5;
+
 }
 
 .externalLinks{
@@ -76,3 +76,67 @@ body{
 	box-shadow: 0.1em 0.1em 0.1em black;
 	background-color: #f8b755;
 }
+
+/* Nav Bar */
+nav ul {
+	padding: 0;
+  }
+  
+  nav li {
+	list-style: none;
+  }
+  
+  nav ul li a {
+	text-decoration: none;
+	color: #333;
+	display: block;
+	padding: 0.6rem 0.3rem;
+	font-weight: 400;
+	transition: all ease-out 250ms;
+  }
+
+  nav ul li a:hover {
+	text-decoration: none;
+	color: #f8b755;
+  }
+
+  .active {
+	color: #f8b755; 
+	font-weight: 600;
+  }
+
+  .side-bar {
+	width: 160px;
+	height: 100vh;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+
+section {
+	background-color: #C6D1D5;
+	height: 100vh;
+	margin:0;
+	padding:2.5rem 4rem;
+  }
+  
+  section:nth-of-type(2n) {
+	background-color: #f2f2f2;
+  }
+  
+  section:last-of-type {
+	height: 100vh;
+  }
+
+  #home{
+	background-image: url('../media/intro-sea-banner.jpg');
+  }
