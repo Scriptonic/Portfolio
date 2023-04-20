@@ -140,7 +140,7 @@
 
 
             <div class="row p-1">
-                <div class="col-6">
+                <div class="col-5">
                     <p class="h2 p-2">
                         Auto-Cropper
                     </p>
@@ -154,15 +154,36 @@
                         to standardize the profile pictures on their seating chart application.
                     </p>
                 </div>
-                <div class="col-6 p-4">
-                    <img class="img-fluid rounded projectPictures" src="media/example-project-picture.png">
+                <div class="col-7">
+                    <div id="page">
+                        <div class="slider-wrapper rounded">
+                            <div class="slider-before">
+                                <img class="content-image"
+                                    src="media/isaac-estell-cropped.jpg"
+                                    draggable="false" />
+                            </div>
+                            <div class="slider-after">
+                                <img class="content-image"
+                                    src="media/isaac-estell-full.jpg"
+                                    draggable="false" />
+                            </div>
+                            <div class="scroller">
+                                <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                    viewBox="0 0 100 100">
+                                    <polygon points="0 50 37 68 37 32 0 50" style="fill:#fff" />
+                                    <polygon points="100 50 64 32 64 68 100 50" style="fill:#fff" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
 
             </div>
 
             <div class="row p-1">
                 <div class="col-6">
-                    <p class="h2 p-2" >
+                    <p class="h2 p-2">
                         Project Title
                     </p>
                     <p class="fs-3">
@@ -257,6 +278,11 @@
     <!--Scroll Nav-->
     <script src="scripts/nav-scroll.js">
     </script>
+
+    <!--Scroll Nav-->
+    <script src="scripts/image-swap.js">
+    </script>
+    
 
     <script>
 
