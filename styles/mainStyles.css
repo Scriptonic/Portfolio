@@ -25,6 +25,7 @@ body{
 
 #skills
 {
+	margin:auto;
 	padding-top:3em;
 }
 
@@ -148,10 +149,10 @@ section {
   .slider-wrapper{
 	max-width: 400px;
 	min-height: 300px;
+	display: block;
 	position: relative;
 	overflow:hidden;
 	margin:auto;
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   }
   
   /* Our image information */
