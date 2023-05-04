@@ -10,273 +10,341 @@
     <link rel="stylesheet" type="text/css" href="styles/mainStyles.css">
 
     <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
 </head>
 
-<body class="bg-light text-dark">
-    <div class="side-bar">
-        <nav class="navigation">
-            <ul class="menu">
-                <li>
-                    <a href="#home">Home</a>
-                    <a href="#intro">Intro</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact-section">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+<body class="text-dark">
+    <div id="bg-deep">
 
-    <div class="container" id="page">
+        <div class="side-bar">
+            <nav class="navigation">
+                <ul class="menu">
+                    <li>
+                        <a href="#home">Home</a>
+                        <a href="#intro">Intro</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact-section">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
-        <section id="home">
-            <div class="rounded border-dark text-center p-5">
-                <div class="col-12">
-                    <img id="profilePic" class="img rounded-circle shadow-lg" src="media/transparent_profile_pic.png">
-                </div>
-
-                <div id="nameTag" class="col-12" id="intro">
-                    <p class="display-2">Isaac Estell</p>
-                    <p class="display-4">Software Developer</p>
-                </div>
-
-                <div id="seeMyWorkButton" class="col-12 p-3" id="intro">
-                    <button class="btn btn-outline-dark" onclick="btnSeeMyWork()">See My Work!</button>
-                </div>
-            </div>
-        </section>
+        <div class="container rounded" id="page">
+            <div id="page-padding">
+                <div class="rounded shadow-lg" id="body-card">
 
 
-        <section id="intro">
-            <div class="row">
-                <div id="introTextDiv" class="col-12">
-                    <p class="display-5">Nice to meet you!</p>
-                    <p id="introText" class="lead">
-                        My name is Isaac Estell and I am a Software Developer.
-                        I have been programming for about seven years now.
-                        I have experience with multiple languages
-                        but my speciality lies in OOP (Object Oriented Programming).
-                    </p>
-                    <p id="introText" class="lead">
-                        At my current position I am a Full Stack Software Developer on an AGILE/SCRUM team. I do a lot
-                        with SQL and MVC projects. My favorite thing to make is Processors that complete tasks such as
-                        creating reports or running calculations on our Database.
-                    </p>
-                    <p id="introText" class="lead">
-                        I am currently looking for a new position that involves a lot of back end development. Let me
-                        be the brain in the basement for your company!
-                    </p>
-                    <div class="text-center">
-                        <a href="media/resume_20220811.pdf" target="_blank" download="IsaacEstell"
-                            class="btn  externalLinks"><img src="media/downloadIcon.png" class="img-fluid"></a>
-                        <a href="mailto:iestell229@gmail.com" target="_blank" class="btn externalLinks"><img
-                                src="media/mail-icon.png" class="img-fluid"></a>
-                        <a href="https://www.linkedin.com/in/isaac-estell-b31952162/" target="_blank"
-                            class="btn  externalLinks"><img src="media/linkedInLogo.png" class="img-fluid"></a>
-                        <a href="https://github.com/Scriptonic" target="_blank" class="btn externalLinks"><img
-                                src="media/githubLogo.png" class="img-fluid"></a>
-                    </div>
+                    <section id="home">
+                        <div class="rounded border-dark text-center p-5">
+                            <div class="col-12">
+                                <img id="profilePic" class="img rounded-circle shadow-lg"
+                                    src="media/transparent_profile_pic.png">
+                            </div>
 
-                    
-                </div>
+                            <div id="nameTag" class="col-12" id="intro">
+                                <p class="display-2">Isaac Estell</p>
+                                <p class="display-4">Software Developer</p>
+                            </div>
+
+                            <div id="seeMyWorkButton" class="col-12 p-3" id="intro">
+                                <button class="btn btn-outline-dark" onclick="btnSeeMyWork()">See My Work!</button>
+                            </div>
+                        </div>
+                    </section>
 
 
-                
-                
-            </div>
-        </section>
+                    <section id="intro">
+                        <div class="row">
+                            <div id="introTextDiv" class="col-12">
+                                <p class="display-5">Nice to meet you!</p>
+                                <p id="introText" class="lead">
+                                    My name is Isaac Estell and I am a Software Developer.
+                                    I have been programming for about seven years now.
+                                    I have experience with multiple languages
+                                    but my speciality lies in OOP (Object Oriented Programming).
+                                </p>
+                                <p id="introText" class="lead">
+                                    At my current position I am a Full Stack Software Developer on an AGILE/SCRUM team.
+                                    I do a
+                                    lot
+                                    with SQL and MVC projects. My favorite thing to make is Processors that complete
+                                    tasks such
+                                    as
+                                    creating reports or running calculations on our Database.
+                                </p>
+                                <p id="introText" class="lead">
+                                    I am currently looking for a new position that involves a lot of back end
+                                    development. Let
+                                    me
+                                    be the brain in the basement for your company!
+                                </p>
+                                <div class="text-center">
+                                    <a href="media/resume_20220811.pdf" target="_blank" download="IsaacEstell"
+                                        class="btn  externalLinks" title="Resume"><img src="media/downloadIcon.png"
+                                            class="img-fluid"></a>
+                                    <a href="mailto:iestell229@gmail.com" target="_blank" class="btn externalLinks"><img
+                                            src="media/mail-icon.png" class="img-fluid" title="Email"></a>
+                                    <a href="https://www.linkedin.com/in/isaac-estell-b31952162/" target="_blank"
+                                        class="btn  externalLinks" title="LinkedIn"><img src="media/linkedInLogo.png"
+                                            class="img-fluid"></a>
+                                    <a href="https://github.com/Scriptonic" target="_blank" class="btn externalLinks"
+                                        title="GitHub"><img src="media/githubLogo.png" class="img-fluid"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-        <section id="projects">
+                    <section id="projects">
 
 
-            <div class="row" id="projectsHeader">
-                <!--Projects-->
-                <p class="display-5">Projects</p>
-                <p class="lead">Here are some of the things I've been working on!
-            </div>
+                        <div class="row" id="projectsHeader">
+                            <!--Projects-->
+                            <p class="display-5">Projects</p>
+                            <p class="lead">Here are some of the things I've been working on!
+                        </div>
 
 
 
-            <div class="accordion accordion-body" id="accordionProjects">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Auto-Cropper
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionProjects">
-                    <div class="accordion-body">
-                        <b>
-                            Description:
-                        </b>
-                        Through the use of <strong>Python</strong> and the package <strong>PyTorch</strong>, I created an automatic image cropper.
-                        The program works by taking in an image, locating the user's head using image recognition and a
-                        neural network.
-                        After the program finds the correct pixel location the photo gets cropped so that
-                        only the user's shoulders and head is visible. This is currently being used at the company I
-                        work for
-                        to standardize the profile pictures on their seating chart application.
+                        <div class="accordion accordion-body" id="accordionProjects">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Auto-Cropper
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionProjects">
+                                    <div class="accordion-body">
+                                        <b>
+                                            Description:
+                                        </b>
+                                        Through the use of <strong>Python</strong> and the package
+                                        <strong>PyTorch</strong>, I
+                                        created an automatic image cropper.
+                                        The program works by taking in an image, locating the user's head using image
+                                        recognition and a
+                                        neural network.
+                                        After the program finds the correct pixel location the photo gets cropped so
+                                        that
+                                        only the user's shoulders and head is visible. This is currently being used at
+                                        the
+                                        company I
+                                        work for
+                                        to standardize the profile pictures on their seating chart application.
 
-                        <div class="">
-                            <div id="page">
-                                <div class="slider-wrapper rounded">
-                                    <div class="slider-before">
-                                        <img class="content-image"
-                                            src="media/isaac-estell-cropped.jpg"
-                                            draggable="false" />
+                                        <div class="">
+                                            <div id="page">
+                                                <div class="slider-wrapper rounded">
+                                                    <div class="slider-before">
+                                                        <img class="content-image" src="media/isaac-estell-cropped.jpg"
+                                                            draggable="false" />
+                                                    </div>
+                                                    <div class="slider-after">
+                                                        <img class="content-image" src="media/isaac-estell-full.jpg"
+                                                            draggable="false" />
+                                                    </div>
+                                                    <div class="scroller">
+                                                        <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg"
+                                                            width="100" height="100" viewBox="0 0 100 100">
+                                                            <polygon points="0 50 37 68 37 32 0 50" style="fill:#fff" />
+                                                            <polygon points="100 50 64 32 64 68 100 50"
+                                                                style="fill:#fff" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="slider-after">
-                                        <img class="content-image"
-                                            src="media/isaac-estell-full.jpg"
-                                            draggable="false" />
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Alien Ant Farm (A.F.F.)
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionProjects">
+                                    <div class="accordion-body">
+                                        <b>
+                                            Description:
+                                        </b>
+                                        Now introducing a brand new level of nerdiness, a fully ai-driven simulation of
+                                        one of
+                                        the worlds weirdest creatures... ants!
+                                        <div class="col-12">
+
+                                            <video autoplay loop class="shadow-lg rounded">
+                                                <source src="media/ant-farm.mp4" type="video/mp4">
+                                            </video>
+
+                                        </div>
                                     </div>
-                                    <div class="scroller">
-                                        <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
-                                            viewBox="0 0 100 100">
-                                            <polygon points="0 50 37 68 37 32 0 50" style="fill:#fff" />
-                                            <polygon points="100 50 64 32 64 68 100 50" style="fill:#fff" />
-                                        </svg>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Portfolio
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionProjects">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until
+                                        the collapse plugin adds the appropriate classes that we use to style each
+                                        element.
+                                        These classes control the overall appearance, as well as the showing and hiding
+                                        via CSS
+                                        transitions. You can modify any of this with custom CSS or overriding our
+                                        default
+                                        variables. It's also worth noting that just about any HTML can go within the
+                                        <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Tic Tac Toe
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionProjects">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until
+                                        the collapse plugin adds the appropriate classes that we use to style each
+                                        element.
+                                        These classes control the overall appearance, as well as the showing and hiding
+                                        via CSS
+                                        transitions. You can modify any of this with custom CSS or overriding our
+                                        default
+                                        variables. It's also worth noting that just about any HTML can go within the
+                                        <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Blackjack
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionProjects">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until
+                                        the collapse plugin adds the appropriate classes that we use to style each
+                                        element.
+                                        These classes control the overall appearance, as well as the showing and hiding
+                                        via CSS
+                                        transitions. You can modify any of this with custom CSS or overriding our
+                                        default
+                                        variables. It's also worth noting that just about any HTML can go within the
+                                        <code>.accordion-body</code>, though the transition does limit overflow.
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Alien Ant Farm (A.F.F.)
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionProjects">
-                    <div class="accordion-body">
-                        <b>
-                            Description:
-                        </b>
-                        Now introducing a brand new level of nerdiness, a fully ai-driven simulation of one of the worlds weirdest creatures... ants!
-                        <div class="col-12">
 
-                            <video autoplay loop class="shadow-lg rounded">
-                                <source src="media/ant-farm.mp4" type="video/mp4">
-                            </video>
+
+
+
+                        <div class="row p-1">
+                            <div class="col-12">
+                                <p class="h2 p-2">
+
+                                </p>
+                                <p class="fs-5">
+
+                                </p>
+                            </div>
+
+
+                        </div>
+
+                    </section>
+
+                    <section id="contact-section">
+
+
+
+
+                        <div class="row" id="contactDiv">
+                            <div class="col-12 rounded text-dark" id="contact">
+                                <form>
+                                    <p class="display-5">Get In Touch</p>
+
+
+                                    <p class="lead">
+                                        Have a project or just dying to talk to me? Send a message below and I'll reach
+                                        out.
+                                    </p>
+                                    <div class="form-group">
+                                        <label for="ContactEmail">Email Address</label>
+                                        <input type="email" class="form-control" id="ContactEmail"
+                                            aria-describedby="emailHelp" placeholder="Enter email">
+                                        <small id="emailHelp" class="form-text text-muted">I'll never share your email
+                                            with
+                                            anyone
+                                            else.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="reasonForContactingDropdown">Reason For Contacting</label>
+                                        <select type="" class="form-control" id="reasonForContactingDropdown">
+                                            <option>More Info</option>
+                                            <option>Interested In Hiring</option>
+                                            <option>Questions</option>
+                                            <option>Start A Project</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Anything else you want to say?</label>
+                                        <textarea class="form-control" id="message" rows="7"></textarea>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-dark"
+                                        onclick="sendEmail()">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <footer id="footer" class="text-center">
+                Copyright 2023
+            </footer>
+
+        </div>
+
+
+
+
         
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Portfolio
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionProjects">
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                        Tic Tac Toe
-                      </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionProjects">
-                      <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                      </div>
-                    </div>              
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                        Blackjack
-                      </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionProjects">
-                      <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                      </div>
-                    </div>              
-                </div>
-              </div>
-
-
-            
-
-            <div class="row p-1">
-                <div class="col-12">
-                    <p class="h2 p-2">
-                        
-                    </p>
-                    <p class="fs-5">
-                        
-                    </p>
-                </div>
-               
-
-            </div>
-
-        </section>
-
-        <section id="contact-section">
-            
-            
-
-
-            <div class="row" id="contactDiv">
-                <div class="col-12 rounded text-dark" id="contact">
-                    <form>
-                        <p class="display-5">Get In Touch</p>
-                       
-                            
-                        <p class="lead">
-                            Have a project or just dying to talk to me? Send a message below and I'll reach out. 
-                        </p>
-                        <div class="form-group">
-                            <label for="ContactEmail">Email Address</label>
-                            <input type="email" class="form-control" id="ContactEmail" aria-describedby="emailHelp"
-                                placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone
-                                else.</small>
-                        </div>
-                        <div class="form-group">
-                            <label for="reasonForContactingDropdown">Reason For Contacting</label>
-                            <select type="" class="form-control" id="reasonForContactingDropdown">
-                                <option>More Info</option>
-                                <option>Interested In Hiring</option>
-                                <option>Questions</option>
-                                <option>Start A Project</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Anything else you want to say?</label>
-                            <textarea class="form-control" id="message" rows="7"></textarea>
-                        </div>
-                        <button type="button" class="btn btn-outline-dark" onclick="sendEmail()">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </section>
     </div>
-    <footer id="footer" class="text-dark text-center">
-        Copyright 2023
-    </footer>
-
-
-
+    
     <!--jQuery-->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
     <!--Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 
     <!--SmptJS-->
     <script src="https://smtpjs.com/v3/smtp.js">
@@ -289,7 +357,7 @@
     <!--Scroll Nav-->
     <script src="scripts/image-swap.js">
     </script>
-    
+
 
     <script>
 
